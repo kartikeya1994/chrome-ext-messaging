@@ -1,0 +1,11 @@
+.hackbar{
+	background: none transparent;
+	position: fixed;
+	z-index: 2147483647;
+	overflow: hidden;
+	scroll: no;
+	top: 200px; 
+	left: 200px;
+	width: 500px;
+	height: 500px;
+}

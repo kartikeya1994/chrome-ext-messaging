@@ -1,0 +1,27 @@
+{
+    "name": "MsgSample",
+    "version": "1.0.0",
+    "manifest_version": 2,
+    "description" : "Boilerplate code for message passing.",
+    "browser_action": {
+        "default_popup": "popup.html"
+    },
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": false
+        },
+    "content_scripts": [
+        {
+        "matches": [ "<all_urls>"],
+        "js": ["content.js"],
+        "css": ["framestyle.css"]
+       }
+    ],
+    "web_accessible_resources": [
+        "iframe/hackbar.html",
+        "iframe/hackbar.css"
+    ],
+    "permissions": [
+      "<all_urls>", "tabs"
+  ]
+}
